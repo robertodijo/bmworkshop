@@ -67,10 +67,9 @@
  }
 
  function sendMessage() {
- var keysbyindex = Object.keys(this);
- var user = this[keysbyindex[1]];
- var message = this[keysbyindex[2]];
-
+ var user = document.getElementById('user');
+ var message = document.getElementById('message');
+ 
  var payload = {
  message: message.value,
  user: user.value,
