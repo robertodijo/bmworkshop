@@ -60,7 +60,7 @@
 
  ws.onmessage = function(ev) {
  var payload = JSON.parse(ev.data);
- createUserMessage(payload.user, payload.message);
+ createUserMessage(payload.[1], payload.[2]);
 
  var chat = document.getElementById('chat_box');
  chat.scrollTop = chat.scrollHeight;
